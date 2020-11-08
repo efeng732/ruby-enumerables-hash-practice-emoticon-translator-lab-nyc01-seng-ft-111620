@@ -25,6 +25,7 @@ def get_english_meaning(file, emotion)
   suffering.each do |meaning, emoji|
     if emoji[:japanese] == emotion  
       return meaning 
+    
     end 
   end 
     
