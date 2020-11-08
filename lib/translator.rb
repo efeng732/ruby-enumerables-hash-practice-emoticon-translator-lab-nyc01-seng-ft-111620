@@ -23,7 +23,7 @@ def get_english_meaning(file, emotion)
   suffering = load_library(file)
   
   suffering.each do |meaning, emoji|
-    if emoji["japanese"] == emotion  
+    if emoji[:japanese] == emotion  
       return meaning 
     end 
   end 
