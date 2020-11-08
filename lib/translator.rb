@@ -14,10 +14,16 @@ def load_library(file)
 my_hash   
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon (file, emoticon)
   # code goes here
+  weeb = load_library(file)
   
-  
+  weeb.each do |meaning, emoji|
+    if emoji[:english] == emoticon 
+      return emoji[:japanese]
+    end 
+  end 
+  "Sorry, that emoticon was not found"
 end
 
 
