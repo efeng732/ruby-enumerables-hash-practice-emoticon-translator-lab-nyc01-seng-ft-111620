@@ -27,6 +27,7 @@ def get_english_meaning(file, emotion)
       return meaning 
     
     end 
+    "Sorry"
   end 
     
   
