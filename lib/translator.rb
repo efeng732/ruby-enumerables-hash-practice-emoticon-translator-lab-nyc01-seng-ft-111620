@@ -6,7 +6,7 @@ def load_library(file)
   # code goes here
   my_hash = {"emotion" => {:english => {}, :japanese => {}}}
   library = YAML.load_file("./lib/emoticons.yml")
-  
+  binding.pry 
   library.each do |emotion, array|
 
     my_hash[emotion] = {:english => array[0], :japanese => array[1]}
